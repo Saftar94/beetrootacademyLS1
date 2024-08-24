@@ -1,55 +1,72 @@
-h1{
-    color:rgb(17, 59, 247);
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 2.6px;
-    line-height: 1.19;
-
+h1 {
+  color: rgb(17, 59, 247);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2.6px;
+  line-height: 1.19;
 }
 
-.head-log{
-    position: sticky;
-    width: 100%;
-    padding: 20p;
-    justify-content: space-around;
-    background: rgb(117, 117, 117, 0.5);
-
+.head-logo {
+  position: sticky;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  justify-content: space-around;
+  background-color: rgb(117, 117, 117, 0.5);
 }
 
-.header-list{
-display: flex;
+.header-list {
+  display: flex;
 }
 
 .list-link {
-    color: red;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.14;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-
+  color: red;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.14;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-button{
-    line-height: 1.14;
-    font-size: 12px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1.3px;
-    color: rgb(53, 247, 65);
-    border-radius: 20%;
-    background: no-repeat;
+button {
+  line-height: 1.14;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  color: rgb(53, 247, 65);
+  border-radius: 20%;
+  background: no-repeat;
 }
-.image-home{
-    border-radius: 20%;
+.image-home {
+  border-radius: 20%;
 }
-/* font-size: 15px;
-font-weight: 500;
-color: antiquewhite; */
 
-p{
-font-size: 15px;
-font-weight: 500;
-color: antiquewhite; 
+p {
+  font-size: 15px;
+  font-weight: 500;
+  color: antiquewhite;
+}
+
+.footer-head {
+  position: sticky;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  justify-content: space-around;
+  background-color: rgb(117, 117, 117, 0.5);
+  color: rgb(17, 59, 247);
+}
+
+.footer-link {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(227, 34, 34);
+}
+
+.footer-soci {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(5, 5, 5);
 }
