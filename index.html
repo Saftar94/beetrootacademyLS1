@@ -12,7 +12,7 @@
     <header>
       <!--can i used here span? -->
       <h1 class="head-logo">Web Studio</h1>
-      <nav>
+      <nav class="nav-list">
         <ul class="header-list">
           <li class="list-item"><a class="list-link" href="#home">Home</a></li>
           <li class="list-item">
@@ -34,52 +34,74 @@
     </header>
     <main>
       <section id="home">
-        <!-- i will used this image in background -->
-        <img
+        <!-- i will used this image in background and i thin it's better used in css `background-image` -->
+        <!-- <img
           class="image-home"
           src="https://cawdvt.org/wp-content/uploads/2022/01/webDesign.jpeg"
           alt="Girl in a jacket"
           width="400"
           height="500"
-        />
-        <h1>Your Vision, Our Creation: Custom Web Solutions</h1>
-        <p class="home-text">
-          "At our web studio, we transform your ideas into stunning digital
-          experiences. We specialize in custom web design, development, and
-          creative solutions tailored to your unique needs. Whether you're
-          looking to build a brand-new site or enhance your online presence, we
-          are committed to delivering high-quality, user-friendly, and visually
-          appealing results that drive
-        </p>
-        <button type="button">Send your request</button>
-        <button type="button">Join</button>
+        /> -->
+        <div class="home-block">
+          <div class="home-left">
+            <h1 class="home-main-text">
+              Your Vision, Our Creation: Custom Web Solutions
+            </h1>
+            <button type="button">Send your request</button>
+            <button type="button">Join</button>
+          </div>
+          <div class="home-right">
+            <p class="home-text">
+              "At our web studio, we transform your ideas into stunning digital
+              experiences. We specialize in custom web design, development, and
+              creative solutions tailored to your unique needs. Whether you're
+              looking to build a brand-new site or enhance your online presence,
+              we are committed to delivering high-quality, user-friendly, and
+              visually appealing results that drive
+            </p>
+          </div>
+        </div>
       </section>
       <section id="discover">
-        <h2 class="discover">
+        <h2 class="discover-head">
           Discover the Power of Professional Web Design Services
         </h2>
-        <p class="discover-text">
-          Our web design services are tailored to meet your unique needs,
-          ensuring a visually stunning and user-friendly website that drives
-          results.
-        </p>
-        <ul>
-          <li>
-            Responsive Design, E-commerce Solutions, SEO Optimization, and more
-          </li>
-          <li>
-            Customized Designs, Mobile-Friendly Layouts, Fast Loading Websites,
-            and more
-          </li>
-          <li>Boost Online Presence with our Web Design Services</li>
-        </ul>
-        <!-- here i have used div-->
-        <img
-          src="https://avatars.mds.yandex.net/i?id=b4cda1dbb3dafd4810f5afcf1029ec55_l-5238557-images-thumbs&n=13"
-          alt="Girl in a jacket"
-          width="400"
-          height="500"
-        />
+        <div class="discover-block">
+          <div class="discover-left">
+            <p class="discover-text">
+              Our web design services are tailored to meet your unique needs,
+              ensuring a visually stunning and user-friendly website that drives
+              results.
+            </p>
+            <!-- <img
+              src="https://avatars.mds.yandex.net/i?id=b4cda1dbb3dafd4810f5afcf1029ec55_l-5238557-images-thumbs&n=13"
+              alt="Girl in a jacket"
+              width="400"
+              height="500"
+            /> -->
+          </div>
+          <div class="discover-right">
+            <ul>
+              <li class="discover-list">
+                <p class="discover-text">
+                  Responsive Design, E-commerce Solutions, SEO Optimization, and
+                  more
+                </p>
+              </li>
+              <li class="discover-list">
+                <p class="discover-text">
+                  Customized Designs, Mobile-Friendly Layouts, Fast Loading
+                  Websites, and more
+                </p>
+              </li>
+              <li class="discover-list">
+                <p class="discover-text">
+                  Boost Online Presence with our Web Design Services
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
       <section id="services">
         <h2>

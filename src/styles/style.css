@@ -1,3 +1,10 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: rgb(6 4 99 / 69%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 h1 {
   color: rgb(17, 59, 247);
   font-size: 20px;
@@ -7,16 +14,23 @@ h1 {
 }
 
 .head-logo {
-  position: sticky;
-  display: flex;
-  width: 100%;
   padding: 20px;
-  justify-content: space-around;
-  background-color: rgb(117, 117, 117, 0.5);
+}
+.nav-list {
+  display: flex;
 }
 
 .header-list {
   display: flex;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+}
+/* is it right to use margin or padding here? */
+.list-item:not(:first-child) {
+  margin-left: 20px;
 }
 
 .list-link {
@@ -39,14 +53,91 @@ button {
   border-radius: 20%;
   background: no-repeat;
 }
+
+#home {
+  background-image: url(https://cawdvt.org/wp-content/uploads/2022/01/webDesign.jpe);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 120px 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.home-main-text {
+  color: rgb(46, 49, 61);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0 auto 30px;
+}
+.home-right {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.home-block {
+  display: flex;
+}
+
 .image-home {
   border-radius: 20%;
+}
+
+#discover {
+  padding: 0 20px;
+}
+.discover-block {
+  display: flex;
+  padding: 20px 0;
+}
+
+.discover-head {
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  color: rgb(46, 49, 61);
+  margin-bottom: 30px;
+  text-align: center;
+}
+.discover-left {
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(https://avatars.mds.yandex.net/i?id=b4cda1dbb3dafd4810f5afcf1029ec55_l-5238557-images-thumbs&n=13);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 120px 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.discover-text {
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  color: rgb(46, 49, 61);
+}
+.discover-list {
+  padding: 20px 20px;
 }
 
 p {
   font-size: 15px;
   font-weight: 500;
-  color: antiquewhite;
+  color: rgb(43, 42, 39);
 }
 
 .footer-head {
