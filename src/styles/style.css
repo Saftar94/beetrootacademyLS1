@@ -1,9 +1,11 @@
 header {
   display: flex;
+  position: static;
   justify-content: space-between;
   padding: 0 20px;
   background-color: rgb(6 4 99 / 69%);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 100%;
 }
 h1 {
   color: rgb(17, 59, 247);
@@ -34,6 +36,7 @@ h1 {
 }
 
 .list-link {
+  position: relative;
   color: red;
   font-size: 20px;
   font-weight: 500;
@@ -43,15 +46,45 @@ h1 {
   text-decoration: none;
 }
 
+.list-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #2196f3;
+  transition: transform 0.3s ease;
+  transform: scaleX(0);
+}
+
+.list-link:hover::after {
+  transform: scaleX(1); /* Показываем линию при наведении */
+}
+
+.list-link:hover {
+  color: #2196f3;
+}
+
 button {
-  line-height: 1.14;
-  font-size: 12px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1.3px;
-  color: rgb(53, 247, 65);
-  border-radius: 20%;
-  background: no-repeat;
+  background-color: #4caf50; /* Начальный цвет кнопки */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 12px;
+}
+button:hover {
+  background-color: #45a049; /* Цвет кнопки при наведении */
+  transform: scale(1.05); /* Легкое увеличение кнопки */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Тень при наведении */
 }
 
 #home {
@@ -94,6 +127,7 @@ button {
 
 #discover {
   padding: 0 20px;
+  margin-bottom: 40px;
 }
 .discover-block {
   display: flex;
@@ -109,6 +143,7 @@ button {
   margin-bottom: 30px;
   text-align: center;
 }
+
 .discover-left {
   width: 100%;
   background-image: linear-gradient(
@@ -123,6 +158,7 @@ button {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .discover-text {
   text-align: center;
   font-weight: 700;
@@ -130,8 +166,26 @@ button {
   line-height: 1.17;
   color: rgb(46, 49, 61);
 }
+
+.discover-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 .discover-list {
   padding: 20px 20px;
+  background-color: #f9f9f9;
+  margin: 5px 0;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+  outline: none;
+}
+
+.discover-list:hover {
+  background-color: #e6e6e6;
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 p {
@@ -139,9 +193,46 @@ p {
   font-weight: 500;
   color: rgb(43, 42, 39);
 }
+.services-head {
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  color: rgb(46, 49, 61);
+  margin-bottom: 30px;
+  text-align: center;
+}
+#services {
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.services-items {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-between;
+}
+.services-list {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+  outline: none;
+}
+.services-list:first-child {
+  margin-left: 0;
+}
+
+.services-list:hover {
+  background-color: #e6e6e6;
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 
 .footer-head {
-  position: sticky;
+  /* position: sticky; */
   display: flex;
   width: 100%;
   padding: 20px;
@@ -160,4 +251,56 @@ p {
   font-size: 15px;
   font-weight: 500;
   color: rgb(5, 5, 5);
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #2196f3;
+  box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+  outline: none;
+}
+
+.form-group input[type="submit"] {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: #1976d2;
+}
+
+.fixed-size-textarea {
+  resize: none;
+  width: 100%;
+  box-sizing: border-box;
 }
