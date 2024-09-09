@@ -67,8 +67,8 @@ h1 {
   color: #2196f3;
 }
 
-button {
-  background-color: #4caf50; /* Начальный цвет кнопки */
+/* button {
+  background-color: #4caf50;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -82,10 +82,10 @@ button {
   border-radius: 12px;
 }
 button:hover {
-  background-color: #45a049; /* Цвет кнопки при наведении */
-  transform: scale(1.05); /* Легкое увеличение кнопки */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Тень при наведении */
-}
+  background-color: #45a049;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+} */
 
 #home {
   background-image: url(https://cawdvt.org/wp-content/uploads/2022/01/webDesign.jpe);
@@ -255,30 +255,112 @@ p {
 
 .form-container {
   background-color: #ffffff;
-  padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.form-group {
-  margin-bottom: 15px;
+.form-main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 108px;
 }
 
-.form-group label {
+.form-htext {
+  color: #030303;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke-width: 1;
+  font-family: Poppins;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.02px;
+  text-transform: uppercase;
+  padding: 20px;
+}
+.form-text {
+  color: #636364;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  margin-bottom: 37px;
+}
+
+.email {
   display: block;
-  margin-bottom: 5px;
-  color: #555;
+  color: #181818;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  margin-bottom: 7px;
+}
+.password {
+  display: block;
+  color: #181818;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  margin-bottom: 7px;
+}
+.lable-checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox {
+  color: #181818;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.36px;
+  margin-right: 8px;
+}
+
+.block-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
 }
 
 .form-group input {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  background: rgba(196, 196, 196, 0);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   font-size: 16px;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 21px;
+}
+
+.form-group input::placeholder {
+  color: #636364;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.42px;
 }
 
 .form-group input:focus {
@@ -298,9 +380,94 @@ p {
 .form-group input[type="submit"]:hover {
   background-color: #1976d2;
 }
+.singin-input {
+  background: no-repeat;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.42px;
+}
 
+.form-sing {
+  width: 100%;
+  padding: 10px;
+  border-radius: 12px;
+  background: #ea454c;
+  box-shadow: 0px 4px 10px 0px rgba(233, 68, 75, 0.25);
+  text-align: center;
+  margin-bottom: 12px;
+}
 .fixed-size-textarea {
   resize: none;
   width: 100%;
-  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  background: rgba(196, 196, 196, 0);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.form-button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  background: rgba(234, 69, 76, 0);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.google-btn {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.svg-google {
+  margin-right: 8px;
+}
+
+.img-form {
+  object-fit: inherit;
+  border-radius: 10px;
+}
+.forgot-password {
+  color: #181818;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.36px;
+  text-decoration: none;
+}
+
+.dont-account {
+  color: #595959;
+  text-align: center;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.3px;
+}
+
+.free-in {
+  color: #ea454c;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  text-decoration: none;
 }
