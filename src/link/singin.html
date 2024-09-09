@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SingUp</title>
+    <link rel="stylesheet" href="../../src/styles/reset.css" />
+    <link rel="stylesheet" href="../../src/styles/style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="form-main">
+        <h2 class="form-htext">Welcome back</h2>
+        <p class="form-text">Welcome back! Please enter your details.</p>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label class="email" for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label class="password" for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="********"
+              required
+            />
+          </div>
+          <div class="block-checkbox">
+            <label class="lable-checkbox">
+              <input class="checkbox" type="checkbox" name="remember" id="remember" />
+              Remember me
+            </label>
+            <a href="#" class="forgot-password" 
+              >Forgot password</a
+            >
+          </div>
+          <div class="form-sing">
+            <input class="singin-input" type="submit" value="Sign In" />
+          </div>
+        <div class="form-button">
+            <button class="google-btn" type="button">
+              <svg class="svg-google" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48">
+                <path fill="#EA4335" d="M24 9.5c3.11 0 5.87 1.18 7.97 3.12l5.9-5.9C33.77 3.4 29.15 1.5 24 1.5 14.52 1.5 6.73 7.89 3.8 16.59l6.96 5.46C12.07 15.15 17.56 9.5 24 9.5z"/>
+                <path fill="#34A853" d="M24 46.5c5.91 0 10.88-1.97 14.49-5.36l-6.73-5.26c-2.05 1.38-4.67 2.21-7.76 2.21-6.06 0-11.2-3.94-13.05-9.32l-7.05 5.46C7.44 40.84 14.98 46.5 24 46.5z"/>
+                <path fill="#4A90E2" d="M46.5 24c0-1.64-.15-3.22-.44-4.74H24v9.26h12.8c-.55 2.92-2.12 5.35-4.51 6.99l7.05 5.26C44.23 37.91 46.5 31.39 46.5 24z"/>
+                <path fill="#FBBC05" d="M10.76 28.09C10.31 26.67 10.06 25.14 10.06 23.5c0-1.64.26-3.17.71-4.59l-6.96-5.46C2.5 16.1 1.5 19.68 1.5 23.5c0 3.82 1.01 7.4 2.81 10.55l6.96-5.46z"/>
+              </svg>
+              Sign in with Google
+            </button>
+          </div>
+          <p class="dont-account">Don’t have an account?<a href="#" class="free-in"> Sign up fo free!</a></p>
+
+      </div>
+      <img
+        src="../images/Right Side.png"
+        alt="singin"
+        width="540"
+        height="650"
+        class="img-form"
+      />
+    </div>
+  </body>
+</html>
