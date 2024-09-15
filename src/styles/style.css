@@ -30,7 +30,6 @@ h1 {
   display: flex;
   align-items: center;
 }
-/* is it right to use margin or padding here? */
 .list-item:not(:first-child) {
   margin-left: 20px;
 }
@@ -60,7 +59,7 @@ h1 {
 }
 
 .list-link:hover::after {
-  transform: scaleX(1); /* Показываем линию при наведении */
+  transform: scaleX(1);
 }
 
 .list-link:hover {
